@@ -1,0 +1,192 @@
+<html><head><base href="https://mandiekao.github.io/my_portfolio/portfolio/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mandie Kao - AI Engineer Portfolio</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+    }
+    header {
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+    }
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+        color: #007bff;
+    }
+    .hero {
+        background: linear-gradient(45deg, #007bff, #19d8df);
+        color: white;
+        text-align: center;
+        padding: 4rem 2rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .cta-button {
+        display: inline-block;
+        background-color: #fff;
+        color: #007bff;
+        padding: 0.75rem 1.5rem;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .cta-button:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+    .intro {
+        display: flex;
+        align-items: center;
+        padding: 4rem 2rem;
+        background-color: #fff;
+    }
+    .intro img {
+        border-radius: 50%;
+        margin-right: 2rem;
+    }
+    .intro-text {
+        flex: 1;
+    }
+    .projects {
+        padding: 4rem 2rem;
+        background-color: #f9f9f9;
+    }
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+    .project-card {
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+        transform: translateY(-5px);
+    }
+    .project-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .project-card .content {
+        padding: 1rem;
+    }
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+        100% { transform: translateY(0px); }
+    }
+    .ai-graphic {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 300px;
+        opacity: 0.2;
+        animation: float 6s ease-in-out infinite;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">Mandie Kao</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <svg class="ai-graphic" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#FFFFFF" d="M47.7,-57.2C59.7,-47.3,66.3,-30.9,68.1,-14.2C69.9,2.5,67,19.5,58.5,32.4C50.1,45.4,36.2,54.3,21.1,59.7C6,65.1,-10.2,67,-24.7,62.7C-39.2,58.4,-52,47.9,-60.1,34.4C-68.2,20.9,-71.7,4.4,-68.3,-10.2C-65,-24.8,-54.8,-37.5,-42.6,-47.4C-30.4,-57.3,-15.2,-64.4,1.3,-65.9C17.8,-67.4,35.6,-63.2,47.7,-57.2Z" transform="translate(100 100)" />
+        </svg>
+        <h1>Hi, I'm Mandie Kao, an AI Engineer specializing in Deep Learning</h1>
+        <a href="#projects" class="cta-button">View My Work</a>
+    </section>
+
+    <section class="intro" id="about">
+        <img src="assets/images/profile.jpg" alt="Mandie Kao profile picture" width="200" height="200">
+        <div class="intro-text">
+            <h2>About Me</h2>
+            <p>I'm passionate about leveraging AI to solve complex problems and drive innovation. With a strong background in machine learning and deep learning, I've contributed to cutting-edge projects that push the boundaries of what's possible with AI.</p>
+            <p>Throughout my career, I've had the opportunity to work on diverse applications of AI, from natural language processing to computer vision. My goal is to continue exploring the vast potential of AI and to create solutions that make a positive impact on the world.</p>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="assets/images/project1.jpg" alt="AI-powered image recognition system" width="250" height="200">
+                <div class="content">
+                    <h3>AI Image Recognition</h3>
+                    <p>Developed a state-of-the-art image recognition system using deep learning techniques.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="assets/images/project2.jpg" alt="Natural Language Processing chatbot" width="250" height="200">
+                <div class="content">
+                    <h3>NLP Chatbot</h3>
+                    <p>Created an intelligent chatbot using advanced NLP models for improved customer service.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="assets/images/project3.jpg" alt="Predictive analytics dashboard" width="250" height="200">
+                <div class="content">
+                    <h3>Predictive Analytics</h3>
+                    <p>Built a predictive analytics dashboard for real-time business intelligence and decision-making.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Add smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
